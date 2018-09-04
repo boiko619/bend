@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.guest {
+  display: grid;
+  grid-template-areas: "guesttop guesttop guesttop " "guestleft login guestright" "guestbase guestbase guestbase";
+  grid-template-columns: 1fr minmax(400px, 2fr) 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 30em;
+  width: 100%;
+  margin-top: 200px;
+  position: relative; }
+
+.guesttop {
+  grid-area: guesttop; }
+
+.guestleft {
+  grid-area: guestleft; }
+
+.guestright {
+  grid-area: guestright; }
+
+.guestbase {
+  grid-area: guestbase; }
+
+.login {
+  display: grid;
+  grid-area: login;
+  grid-template-areas: "title" "passwords" "button";
+  grid-gap: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 40px 40px 40px 40px;
+  border: 3px solid #573757;
+  box-shadow: 0px 0px 206px 2px rgba(71, 22, 0, 0.51); }
+
+.title {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cookie', cursive; }
+  .title p {
+    font-size: 1.5em; }
+
+.passwords {
+  grid-area: passwords;
+  display: grid;
+  grid-template-areas: "name" "mail" "pass";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  padding: 0 5%; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: button; }
+  .button #login-button, .button #singup-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid #573757;
+    background: #b86db8; }
+
+#input-email {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: mail; }
+
+#input-password {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: pass; }
+
+#input-name {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  border: 3px solid #573757;
+  grid-area: name; }
+
+/*.user{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 40px;
+
+}*/
+.head-many {
+  display: grid;
+  grid-template-columns: minmax(350px, 2fr) minmax(150px, 7fr) minmax(100px, 1fr) minmax(50px, 60px);
+  grid-template-areas: "logo flexmenu user label-toggle";
+  grid-gap: 10px;
+  padding: 10px 0; }
+
+.logo {
+  grid-area: logo;
+  padding: 0 50px; }
+
+.flexmenu {
+  grid-area: flexmenu;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 10px; }
+
+li {
+  list-style-type: none; }
+
+a {
+  font-family: 'Cookie', cursive;
+  text-decoration: none;
+  color: #141414;
+  transition: .5s;
+  font-size: 2rem; }
+
+.user {
+  grid-area: user;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#menu-toggle {
+  display: none; }
+
+.button_user {
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #573757;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  margin: 10px 0;
+  background: #333333; }
+  .button_user a {
+    font-size: 1.5em;
+    color: beige; }
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    background: white;
+    visibility: hidden;
+    transform: all 3s ease; }
+  li {
+    display: block;
+    border: black; }
+  .logo {
+    padding: 0; }
+  .label-toggle {
+    background: linear-gradient(to bottom, red 0%, red 20%, transparent 20%, transparent 40%, red 40%, red 60%, transparent 60%, transparent 80%, red 80%, red 100%);
+    cursor: pointer;
+    height: 35px;
+    justify-content: center;
+    margin-top: 2.5em;
+    width: 35px;
+    display: flex;
+    grid-area: label-toggle; } }

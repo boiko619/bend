@@ -1,0 +1,40 @@
+CREATE TABLE admin(
+    id int(11) NOT NULL AUTO_INCREMENT,
+    username varchar(25) NOT NULL,
+    mail varchar(25) NOT NULL,
+    pass varchar(25) NOT NULL,
+    created_ad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+    );
+    CREATE TABLE newpost(
+    id int(11) NOT NULL AUTO_INCREMENT,
+    name varchar(25) NOT NULL,
+    email varchar(25) NOT NULL,
+    task varchar(1000) NOT NULL,
+    foto varbinary(max) NOT NULL,
+    created_ad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+    );
+
+
+
+    DROP TABLE IF EXISTS `admin` (); CREATE TABLE `admin` (    id int(11) NOT NULL AUTO_INCREMENT,
+    username varchar(25) NOT NULL,
+    mail varchar(25) NOT NULL,
+    pass varchar(25) NOT NULL,
+    created_ad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id));
+DROP TABLE IF EXISTS `newpost` (); CREATE TABLE `newpost` (    
+	 id int(11) NOT NULL AUTO_INCREMENT,
+    name varchar(25) NOT NULL,
+    email varchar(25) NOT NULL,
+    task varchar(1000) NOT NULL,
+    foto varbinary(max) NOT NULL,
+    created_ad TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id));
+
+
+
+    Commodo id et aute nulla ea consectetur non.Est fugiat sunt proident occaecat elit sunt irure fugiat consectetur consectetur magna officia sit.Ad voluptate ex ad velit laborum ea dolore eu exercitation excepteur anim reprehenderit dolore duis.Sunt et ad minim amet qui sunt.Nisi voluptate sit non ea proident esse adipisicing esse Lorem cupidatat elit aliquip.
+    Id id commodo elit enim est excepteur non id elit cillum tempor.Dolor aute nisi veniam do officia cupidatat do id exercitation est mollit.Laborum Lorem minim occaecat occaecat aliqua.Culpa dolore esse minim exercitation qui eiusmod qui duis.
+    Ut exercitation commodo ea exercitation ipsum.Cupidatat cupidatat esse duis sint consectetur elit nisi anim nostrud.Est voluptate proident consequat nulla quis sunt minim voluptate id sint aliqua.Sit ea duis quis excepteur exercitation elit tempor pariatur aliqua.Tempor ad esse proident duis adipisicing consequat cupidatat nisi Lorem proident.Ut sit dolore excepteur sit incididunt nisi consequat do ut laboris cupidatat pariatur ex nostrud.Deserunt sunt in non dolore eiusmod.Pariatur aute culpa ad enim minim adipisicing ullamco reprehenderit dolore.Duis magna ut dolor sit dolore aute esse reprehenderit aliqua incididunt cupidatat Lorem.
